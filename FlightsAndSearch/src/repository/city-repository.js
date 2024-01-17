@@ -19,6 +19,7 @@ class CityRepository{
 
        try{
         await City.destroy({where:{id:cityid}});
+        return true;
        }
        catch(error)
        {
