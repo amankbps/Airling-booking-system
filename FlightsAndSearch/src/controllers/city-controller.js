@@ -1,5 +1,5 @@
 
-const {CityService}=require('../service/index');
+const {CityService}=require('../services/index');
 
 
 /**
