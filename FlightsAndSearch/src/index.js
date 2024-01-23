@@ -5,7 +5,7 @@ const {PORT}=require('./config/serverConfig.js');
 const ApiRoutes=require('./routes/index');
 
 const db=require('./models/index');
-const {Airport,City}=require('./models/index');
+const {Airport,City,Airplane}=require('./models/index');
 
 const setupAndStartServer=async()=>{
 
@@ -24,11 +24,10 @@ const setupAndStartServer=async()=>{
         {
             db.sequelize.sync({alter:true});
         }
-        const city=await City.findOne({
-            where:{id:3}
-        });
-        const airports=await city.getAirports();
-        console.log(city,airports);
+        
+        // const airplane=await Airplane.findByPk(2);
+        // console.log(airplane);
+        // console.log(airplane.dataValues.capacity);
 
         
     });
