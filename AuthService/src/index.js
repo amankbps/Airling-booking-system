@@ -5,6 +5,7 @@ const {PORT}=require('./config/serverConfig');
 
 const ApiRoutes=require('./routes/index');
 
+
 const app=express();
 
 const preapareAndStartServer=()=>{
@@ -16,6 +17,8 @@ const preapareAndStartServer=()=>{
       
      app.listen(PORT,()=>{
         console.log(`server starte at PORT ${PORT}`);
+
+       
      });
 }
 
