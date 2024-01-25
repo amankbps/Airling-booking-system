@@ -19,4 +19,11 @@ AuthRequestValidator.validUserAuth,
 UserController.signIn
 );
 
+router.get(
+    '/isAuthenticate',
+    UserController.isAuthenticated
+)
+
+
+
 module.exports=router;
