@@ -22,7 +22,11 @@ UserController.signIn
 router.get(
     '/isAuthenticate',
     UserController.isAuthenticated
-)
+);
+
+router.get('/isAdmin',
+AuthRequestValidator.validateIsAdminRequest,
+UserController.isAdmin);
 
 
 
